@@ -3,17 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nekochess</title>
+    <title>Nekochess - Online Chess Entertainment Platform</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
-        h1 { color: #333; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background: #1a1a2e; color: #eee; }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        header h1 { font-size: 3em; color: #fff; letter-spacing: 2px; }
+        header p { font-size: 1.15em; color: #aaa; margin-top: 12px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 14px 36px;
+            background: #e67e22;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .cta:hover { background: #cf6d17; }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 20px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .feature {
+            background: #16213e;
+            border-radius: 10px;
+            padding: 20px 24px;
+            flex: 1 1 220px;
+            max-width: 260px;
+            text-align: center;
+        }
+        .feature .icon { font-size: 2em; margin-bottom: 10px; }
+        .feature h3 { color: #fff; margin-bottom: 6px; }
+        .feature p { color: #999; font-size: 0.9em; line-height: 1.5; }
+
+        .screenshots {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+        .screenshots h2 { text-align: center; font-size: 1.8em; margin-bottom: 28px; color: #fff; }
+        .screenshot-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+        .screenshot-grid img {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 10px;
+            border: 2px solid #333;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 0.85em;
+        }
+        footer a { color: #aaa; text-decoration: none; }
+        footer a:hover { color: #fff; }
     </style>
 </head>
 <body>
-    <h1>Nekochess</h1>
-    <p>Nekochess is an online chess entertainment platform where you can play chess against AI bots, complete puzzles, and review your games.</p>
-    <p>We offer premium subscriptions that unlock advanced features, and a virtual credits system to open collectible blind boxes containing digital chess piece artwork.</p>
-    <p>Contact: sithuhtunthegreat@gmail.com</p>
-    <p><a href="/legal">特定商取引法に基づく表記 / Legal Disclosure (Specified Commercial Transactions Act)</a></p>
+
+    <header>
+        <h1>Nekochess</h1>
+        <p>Online chess entertainment platform — play against AI bots, solve puzzles, review your games, and collect digital chess art.</p>
+        <a class="cta" href="https://app.nekochess.com">Play Now</a>
+    </header>
+
+    <div class="features">
+        <div class="feature">
+            <div class="icon">♟️</div>
+            <h3>Play vs AI Bots</h3>
+            <p>Challenge unique AI bots with distinct personalities and playstyles across all skill levels.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">🧩</div>
+            <h3>Puzzles & Quizzes</h3>
+            <p>Sharpen your chess skills with puzzles, blunder detection, and evaluation training.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">📊</div>
+            <h3>Game Review</h3>
+            <p>Analyze your games with Stockfish-powered review and evaluation graphs.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">🎁</div>
+            <h3>Collectible Blind Boxes</h3>
+            <p>Open blind boxes with virtual credits to collect unique digital chess piece artwork.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">👑</div>
+            <h3>Premium Plans</h3>
+            <p>Unlock unlimited features with Superior or Supreme subscriptions.</p>
+        </div>
+    </div>
+
+    <div class="screenshots">
+        <h2>App Screenshots</h2>
+        <div class="screenshot-grid">
+            <img src="1.png" alt="Nekochess gameplay screenshot">
+            <img src="2.png" alt="Nekochess features screenshot">
+            <img src="3.png" alt="Nekochess interface screenshot">
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2026 Nekochess &nbsp;|&nbsp;
+            <a href="mailto:contact.nekochess@gmail.com">contact.nekochess@gmail.com</a> &nbsp;|&nbsp;
+            <a href="/legal">特定商取引法に基づく表記 / Legal Disclosure</a>
+        </p>
+    </footer>
+
 </body>
 </html>
